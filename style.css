@@ -158,3 +158,48 @@ section {
 .attribution a {
     color: var(--pale-blue)
 }
+
+@media (min-width: 1280px){
+    body {
+        background: var(--very-dark-blue) url(./images/bg-desktop.png) no-repeat 0 110% / 100%;
+    }
+
+    .wrapper {
+        width: 80%;
+        margin: 0 auto;
+        flex-direction: row;
+    }
+
+    .wrapper__data {
+        flex: 1;
+    }
+
+    .data__logo {
+        margin-top: 4.2rem;
+        margin-bottom: 3.5rem;
+    }
+
+    .wrapper__storage {
+        margin-left: 2rem;
+        flex: 2;
+        position: relative;
+        align-self: flex-end;
+    }
+
+    .storage__total-storage {
+        position: relative;
+        top: -18rem;
+        left: 28%;
+    }
+
+    .storage__total-storage::after{
+        content: "";
+        width: 0;
+        height: 0;
+        position: relative;
+        top: 3.8rem;
+        left: 8.8%;
+        border-top: 20px solid white;
+        border-left: 20px solid transparent;
+    }
+}
