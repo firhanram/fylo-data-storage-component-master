@@ -11,22 +11,11 @@
 
   <title>Frontend Mentor | Fylo data storage component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
 </head>
 
 <body>
   <div class="wrapper">
-    <section class="data">
+    <section class="wrapper__data">
       <img src="./images/logo.svg" class="data__logo" alt="Logo">
       <div class="data__items">
         <div class="data__items__item">
@@ -35,13 +24,13 @@
         <div class="data__items__item">
           <img src="./images/icon-folder.svg" class="data__items__item__img" alt="icon-folder">
         </div>
-      </div>
-      <div class="data__items__item">
-        <img src="./images/icon-upload.svg" class="data__items__item__img" alt="icon-upload">
+        <div class="data__items__item">
+          <img src="./images/icon-upload.svg" class="data__items__item__img" alt="icon-upload">
+        </div>
       </div>
     </section>
-    <section class="storage">
-      <h4 class="storage__title">You’ve used 815 GB of your storage</h4>
+    <section class="wrapper__storage">
+      <h4 class="storage__title">You’ve used <span>815 GB</span> of your storage</h4>
       <div class="storage__bar">
         <div class="storage__bar__progress">
           <div class="storage__bar__progress__ball"></div>
@@ -55,17 +44,16 @@
           1000 GB
         </div>
       </div>
-      <div class="total-storage">
-        <div class="total__storage__size">
-          185 <span>GB Left</span>
+      <div class="storage__total-storage">
+        <div class="storage__total-storage__size">
+          185
+        </div>
+        <div class="storage__total-storage__gb">
+          GB LEFT
         </div>
       </div>
     </section>
   </div>
-
-
-
-
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
